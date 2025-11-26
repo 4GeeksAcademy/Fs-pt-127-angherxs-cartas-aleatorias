@@ -1,5 +1,69 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+}
 
-body{
-    background: white;
+.card {
+    width: 180px;
+    height: 260px;
+    margin: 20px auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top, .bottom {
+    position: absolute;
+    font-size: 28px;
+}
+
+.top {
+    top: 10px;
+    left: 12px;
+}
+
+.bottom {
+    bottom: 10px;
+    right: 12px;
+    transform: rotate(180deg);
+}
+
+.number {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+/* Palos */
+.diamonds .top::before,
+.diamonds .bottom::before {
+    content: "♦";
+    color: red;
+}
+
+.hearts .top::before,
+.hearts .bottom::before {
+    content: "♥";
+    color: red;
+}
+
+.spades .top::before,
+.spades .bottom::before {
+    content: "♠";
+    color: black;
+}
+
+.clubs .top::before,
+.clubs .bottom::before {
+    content: "♣";
+    color: black;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
 }
