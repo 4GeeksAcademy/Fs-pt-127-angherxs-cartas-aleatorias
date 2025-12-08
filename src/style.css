@@ -38,7 +38,7 @@ body {
     font-weight: 700;
 }
 
-/* Palos */
+
 .diamonds .top::before,
 .diamonds .bottom::before {
     content: "♦";
